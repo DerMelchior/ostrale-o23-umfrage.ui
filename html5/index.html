@@ -120,5 +120,26 @@
     <script ASYNC src="https://unpkg.com/survey-jquery/survey.jquery.min.js" crossorigin="anonymous"></script>
     <script ASYNC src="https://unpkg.com/survey-core/survey.i18n.min.js" crossorigin="anonymous"></script>
     <script ASYNC src="https://unpkg.com/survey-core/plugins/bootstrap-integration.min.js" crossorigin="anonymous"></script>
+    <script async src="./js/ostrale023-umfrage_json.js"></script>
+  <script async src="./js/ostrale23-umfrage.js"></script>
 </body>
+<div id="my-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="my-modal-title" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="my-modal-title">Title</h5>
+                <button class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div id="surveyElement" style="display: inline-flex;">
+                    <survey params="survey: model"></survey>
+                    <survey params="survey.defaultLocale: en"></survey>
+                    <survey params="survey.locale: de"></survey>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 </html>
