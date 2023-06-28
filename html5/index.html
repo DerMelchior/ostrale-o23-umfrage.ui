@@ -27,8 +27,8 @@
     <script ASYNC src="./js/scripts.js" type="text/javascript" crossorigin="anonymous"></script>
     <title>Umfrage zur Ostrale Biennale O23</title>
 </head>
-<body id="pageID">
-<header class="d-none2">
+<body id="page">
+<header class="d-none">
     <div class="container container-xxl">
         <div class="row justify-content-between">
             <div class="col-md-4 col-lg-6 logo bg-image start" id="logo1" style="background-image: url('./images/ostrale_logo_194x59.jpg');background-size: contain;background-repeat: no-repeat;background-position: top left;min-height:100px;"></div>
@@ -38,10 +38,10 @@
 </header>
 <main>
 <div class="container-lg">
-   <div id="carouselId" class="carousel carousel-dark fade" data-bs-ride="carousel">
+   <div id="carouselId" class="carousel carousel-dark carousel-fade" data-bs-ride="carousel">
 	<!-- Carousel indicators -->
-        <ol class="carousel-indicators hidden d-none">
-            <li     data-bs-target="#carouselId" data-bs-slide-to="0" class="active"></li>
+        <ol class="carousel-indicators d-none">
+            <li data-bs-target="#carouselId" data-bs-slide-to="0" class="active"></li>
             <li data-bs-target="#carouselId" data-bs-slide-to="1"></li>
             <li data-bs-target="#carouselId" data-bs-slide-to="2"></li>
             <li data-bs-target="#carouselId" data-bs-slide-to="3"></li>
@@ -56,7 +56,7 @@
                         <div class="col-4 end">
 		                  <h2 class="display-3 text-center">Beteilige Dich an der <span class="bs-red text-bold text-danger" style="font-size: 67px;">O</span>23 Umfrage!</h2>
                           <div class="carousel-caption bottom d-none d-md-block">
-                            <a class="btn btn-danger btn-lg btn-xxl text-white ripple" href="./umfrage.html" data-language="de" role="button"id="BtnDE1">Starte Umfrage</a>
+                            <a class="btn btn-danger btn-lg btn-xxl text-white ripple" href="#my-modal" data-target="#my-modal" data-dismiss="modal" data-language="de" role="button"id="BtnDE1">Starte Umfrage</a>
                           </div>
                         </div>                    </div>
                 </div>
@@ -65,7 +65,7 @@
                     <div class="col-4 start">
                         <h2 class="display-3 text-center">Take part in the survey about the biennial <span class="bs-red text-bold text-danger" style="font-size: 67px;">O</span>23!</h2>
 			            <div class="carousel-caption bottom d-none d-md-block">
-                            <a class="btn btn-danger btn-lg btn-xxl text-white ripple" href="./umfrage.html" data-language="en" role="button" id="BtnEN1">Start the survey</a>
+                            <a class="btn btn-danger btn-lg btn-xxl text-white ripple" href="#my-modal" data-target="#my-modal" data-language="en" role="button" id="BtnEN1">Start the survey</a>
                         </div>
                     </div>
                     <div class="col-8 end">
@@ -79,7 +79,7 @@
                     <div class="col-4 end">
 			                     <h2 class="display-3 text-center">Sag uns Deine Meinung!</h2>
                         <div class="carousel-caption bottom d-none d-md-block">
-                            <a class="btn btn-lg btn-danger btn-xxl text-white ripple" href="./umfrage.html" data-language="de" role="button"id="BtnDE2">Starte Umfrage</a>
+                            <a class="btn btn-lg btn-danger btn-xxl text-white ripple" href="#my-modal" data-target="#my-modal" data-language="de" role="button"id="BtnDE2">Starte Umfrage</a>
                         </div>
                     </div>
                     <div class="col-8 start">
@@ -97,7 +97,7 @@
                     <div class="col-4 end">
 			            <h2 class="display-3 text-center">Tell us your opinion</h2>
                             <div class="carousel-caption bottom d-none d-md-block">
-                            <a class="btn btn-danger btn-lg btn-xxl text-white ripple" href="./umfrage.html" data-language="en" role="button" id="BtnEN2">Start the survey</a>
+                            <a class="btn btn-danger btn-lg btn-xxl text-white ripple" href="#my-modal" data-target="#my-modal" data-language="en" role="button" id="BtnEN2">Start the survey</a>
                         </div>
                     </div>
                 </div>
@@ -120,8 +120,8 @@
     <script ASYNC src="https://unpkg.com/survey-jquery/survey.jquery.min.js" crossorigin="anonymous"></script>
     <script ASYNC src="https://unpkg.com/survey-core/survey.i18n.min.js" crossorigin="anonymous"></script>
     <script ASYNC src="https://unpkg.com/survey-core/plugins/bootstrap-integration.min.js" crossorigin="anonymous"></script>
-    <script async src="./js/ostrale023-umfrage_json.js"></script>
-  <script async src="./js/ostrale23-umfrage.js"></script>
+    <script async src="./js/ostrale023-umfrage_json.js" crossorigin="anonymous"></script>
+  <script async src="./js/ostrale23-umfrage.js" crossorigin="anonymous"></script>
 </body>
 <div id="my-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="my-modal-title" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
