@@ -1,13 +1,14 @@
 /* private scripts */
+
+var ostrale_survey_locale = "de";
+const survey = new Survey.Model(json);
 /* scripts called after dom content loaded */
 document.addEventListener("DOMContentLoaded", function() {
-    var ostrale_survey_locale = "de";
- 
+    document.ostrale_survey_locale = "de";
     var btnDE = document.getElementById("BtnDE");
     var btnEN = document.getElementById("BtnEN");
     var SurveyModal = new bootstrap.Modal(document.getElementById("my-modal"));
-  
-    const survey = new Survey.Model(json);
+
     console.log('DOMContentLoaded! ')
     survey.supportedLocales = ["en", "de"];
     survey.defaultLocale = "en";
@@ -26,8 +27,8 @@ document.addEventListener("DOMContentLoaded", function() {
         ostrale_survey_locale = button.getAttribute("data-language");
         // Change survey language
         //myModal.querySelector(".modal-title").innerText = titleData;
-        survey.locale = ostrale_survey_locale;
-        console.log('language: '+ostrale_survey_locale);
+        survey.locale = document.ostrale_survey_locale;
+        console.log('language: '+document.ostrale_survey_locale);
     });
 /*
     btnDE.addEventListener("click", function() {SurveyModal.show(); });
@@ -35,15 +36,17 @@ document.addEventListener("DOMContentLoaded", function() {
     btnEN1.addEventListener("click", function() {SurveyModal.show(); });
     btnEN.addEventListener("click", function() {SurveyModal.show(); });
 */
-    function call_startSurvey(locale) {
-	   ostrale_survey_locale = locale;
-	   $("#surveyElement").Survey({ model: survey, locale: ostrale_survey_locale });
-       console.log('locale: '+locale);
-       console.log('locale: '+locale);
-       
-    }
+    
 
     
 
 
 });
+
+function call_startSurvey(locale) {
+    document.ostrale_survey_locale = locale;
+    $("#surveyElement").Survey({ model: survey, locale: document.ostrale_survey_locale });
+    console.log('locale: '+locale);
+    console.log('locale: '+locale);
+    
+ }
