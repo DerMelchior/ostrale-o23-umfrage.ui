@@ -2,10 +2,22 @@
 /* scripts called after dom content loaded */
 document.addEventListener("DOMContentLoaded", function() {
     var ostrale_survey_locale = "de";
-
+ 
     var btnDE = document.getElementById("BtnDE");
     var btnEN = document.getElementById("BtnEN");
     var SurveyModal = new bootstrap.Modal(document.getElementById("my-modal"));
+  
+    const survey = new Survey.Model(json);
+    console.log('DOMContentLoaded! ')
+    survey.supportedLocales = ["en", "de"];
+    survey.defaultLocale = "en";
+    survey.onComplete.add((sender, options) => {
+        console.log("DATA: "+JSON.stringify(sender.data, null, 3));
+    }); 
+    survey.onStarted.add(() => {
+        survey.showNavigationButtons = false;
+        survey.locale = ostrale_survey_locale;
+    });
 
     SurveyModal.addEventListener("show.bs.modal", function(event){        
         // Get the button that triggered the modal
