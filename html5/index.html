@@ -56,16 +56,17 @@
                         <div class="col-4 end">
 		                  <h2 class="display-3 text-center">Beteilige Dich an der <span class="bs-red text-bold text-danger" style="font-size: 67px;">O</span>23 Umfrage!</h2>
                           <div class="carousel-caption bottom d-none d-md-block">
-                            <a class="btn btn-danger btn-lg btn-xxl text-white ripple" href="#my-modal" data-target="#my-modal" data-dismiss="modal" data-language="de" role="button"id="BtnDE1">Starte Umfrage</a>
+                            <a class="btn btn-danger btn-lg btn-xxl text-white" data-bs-toggle="modal"  data-bs-target="#my-modal" data-dismiss="modal" data-language="de" role="button"id="BtnDE1" onClick="call_startSurvey('de');">Starte Umfrage</a>
                           </div>
-                        </div>                    </div>
+                        </div>                    
+		    </div>
                 </div>
                 <div class="carousel-item" data-bs-interval="10000">
                     <div class="row justify-content-evenly">
                     <div class="col-4 start">
                         <h2 class="display-3 text-center">Take part in the survey about the biennial <span class="bs-red text-bold text-danger" style="font-size: 67px;">O</span>23!</h2>
 			            <div class="carousel-caption bottom d-none d-md-block">
-                            <a class="btn btn-danger btn-lg btn-xxl text-white ripple" href="#my-modal" data-target="#my-modal" data-language="en" role="button" id="BtnEN1">Start the survey</a>
+                            <a class="btn btn-danger btn-lg btn-xxl text-white" data-bs-toggle="modal" data-bs-target="#my-modal" data-language="en" role="button" id="BtnEN1" onClick="call_startSurvey('en');">Start the survey</a>
                         </div>
                     </div>
                     <div class="col-8 end">
@@ -79,7 +80,7 @@
                     <div class="col-4 end">
 			                     <h2 class="display-3 text-center">Sag uns Deine Meinung!</h2>
                         <div class="carousel-caption bottom d-none d-md-block">
-                            <a class="btn btn-lg btn-danger btn-xxl text-white ripple" href="#my-modal" data-target="#my-modal" data-language="de" role="button"id="BtnDE2">Starte Umfrage</a>
+                            <a class="btn btn-lg btn-danger btn-xxl text-white" data-bs-toggle="modal" data-bs-target="#my-modal" data-language="de" role="button" id="BtnDE2" onClick="call_startSurvey('de');">Starte Umfrage</a>
                         </div>
                     </div>
                     <div class="col-8 start">
@@ -97,7 +98,7 @@
                     <div class="col-4 end">
 			            <h2 class="display-3 text-center">Tell us your opinion</h2>
                             <div class="carousel-caption bottom d-none d-md-block">
-                            <a class="btn btn-danger btn-lg btn-xxl text-white ripple" href="#my-modal" data-target="#my-modal" data-language="en" role="button" id="BtnEN2">Start the survey</a>
+                            <a class="btn btn-danger btn-lg btn-xxl text-white" data-bs-toggle="modal" data-bs-target="#my-modal" data-language="en" role="button" id="BtnEN2" onClick="call_startSurvey('en');">Start the survey</a>
                         </div>
                     </div>
                 </div>
@@ -124,11 +125,11 @@
   <script async src="./js/ostrale23-umfrage.js" crossorigin="anonymous"></script>
 </body>
 <div id="my-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="my-modal-title" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-dialog modal-xxl modal-dialog-centered" role="document">
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title d-none" id="my-modal-title">Umfrage / Survey</h5>
-                <button class="carousel-control-prev-icon" disabled="true" data-dismiss="modal" aria-label="Zurück / Back">
+                <button class="carousel-control-prev-icon" disabled="true" aria-label="Zurück / Back">
                     <span aria-hidden="true"><i class="fas fa-creative-commons fa-icons fa-arrow-circle-left"></i>"></span>
                 </button>
                 <button class="close" data-dismiss="modal" aria-label="Close">

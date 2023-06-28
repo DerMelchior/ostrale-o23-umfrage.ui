@@ -8,6 +8,7 @@ function changeLocale() {
 changeLocale();
 
 
+
 /* scripts called after dom content loaded */
 document.addEventListener("DOMContentLoaded", function() {
     var ostrale_survey_locale = "de";
@@ -16,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function() {
     var btnDE2 = document.getElementById("Btn_DE2");
     var btnEN1 = document.getElementById("Btn_EN1");
     var btnEN2 = document.getElementById("Btn_EN2");
-    var SurveyModal = new bootstrap.Modal(document.getElementById("ModalSurveyContent"));
+    var SurveyModal = new bootstrap.Modal(document.getElementById("my-modal"));
 
     SurveyModal.addEventListener("show.bs.modal", function(event){        
         // Get the button that triggered the modal
@@ -34,7 +35,10 @@ document.addEventListener("DOMContentLoaded", function() {
     btnEN1.addEventListener("click", function() {SurveyModal.show(); });
     btnEN2.addEventListener("click", function() {SurveyModal.show(); });
 
-
+    function call_startSurvey(var locale){
+	ostrale_survey_locale = locale;
+	console.log('locale: '+locale),
+    }
 
     
 
