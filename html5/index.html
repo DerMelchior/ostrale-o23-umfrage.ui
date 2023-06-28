@@ -15,7 +15,7 @@
     <!-- Font Awesome CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous"/>
     <!-- JQuery JS -->
-    <script ASYNC src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.92/jquery.min.js" crossorigin="anonymous"></script>
+    <script ASYNC src="https://unpkg.com/jquery@3.6.4/dist/jquery.min.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/survey-jquery@1.9.92/survey.jquery.min.js"></script>
     <!-- SurveyJS Theme CSS -->
     <!--<link href="https://unpkg.com/survey-jquery/modern.min.css" type="text/css" rel="stylesheet" crossorigin="anonymous"/>-->
@@ -39,11 +39,19 @@
 </header>
 <main>
     <div class="container-xl">
-        <div class="col-6 start">
-            <a class="btn btn-danger btn-lg btn-xxl text-white" data-bs-toggle="modal" data-bs-target="#my-modal" data-language="en" role="button" id="BtnEN" onClick="call_startSurvey('en');">Start the survey</a>
+        <div class="d-flex col-start vh-100">
+            
         </div>
-        <div class="col-6 end">
-            <a class="btn btn-lg btn-danger btn-xxl text-white" data-bs-toggle="modal" data-bs-target="#my-modal" data-language="de" role="button" id="BtnDE" onClick="call_startSurvey('de');">Starte Umfrage</a>
+        <div class="d-flex col-end vh-100">
+            <div class="d-flex mh-50">
+                <h2 class="display-3 text-center">Beteilige Dich an der <span class="bs-red text-bold text-danger" style="font-size: 67px;">O</span>23 Umfrage!</h2>       
+                <a class="btn btn-lg btn-danger btn-xxl text-white" data-bs-toggle="modal" data-bs-target="#my-modal" data-language="de" role="button" id="BtnDE" onClick="call_startSurvey('de');">Starte Umfrage</a>
+            </div>
+            <div class="d-flex mh-50">
+                <h2 class="display-3 text-center">Take part in the survey about the biennial <span class="bs-red text-bold text-danger" style="font-size: 67px;">O</span>23!</h2>
+                <a class="btn btn-danger btn-lg btn-xxl text-white" data-bs-toggle="modal" data-bs-target="#my-modal" data-language="en" role="button" id="BtnEN" onClick="call_startSurvey('en');">Start the survey</a>
+            </div>
+            
         </div>
 
     </div>
