@@ -1,10 +1,10 @@
 /* private scripts */
 
 var ostrale_survey_locale = "de";
-const survey = new Survey.Model(json);
+export const survey = new Survey.Model(json);
 /* scripts called after dom content loaded */
 document.addEventListener("DOMContentLoaded", function() {
-    document.ostrale_survey_locale = "de";
+    ostrale_survey_locale = "de";
     var btnDE = document.getElementById("BtnDE");
     var btnEN = document.getElementById("BtnEN");
     var SurveyModal = new bootstrap.Modal(document.getElementById("my-modal"));
