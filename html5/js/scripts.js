@@ -1,7 +1,7 @@
 /* private scripts */
 
-var ostrale_survey_locale = "de";
-export const survey = new Survey.Model(json);
+var windows.ostrale_survey_locale = "de";
+const survey = new Survey.Model(json);
 /* scripts called after dom content loaded */
 document.addEventListener("DOMContentLoaded", function() {
     ostrale_survey_locale = "de";
@@ -32,8 +32,6 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 /*
     btnDE.addEventListener("click", function() {SurveyModal.show(); });
-    btnDE2.addEventListener("click", function() {SurveyModal.show(); });
-    btnEN1.addEventListener("click", function() {SurveyModal.show(); });
     btnEN.addEventListener("click", function() {SurveyModal.show(); });
 */
     
