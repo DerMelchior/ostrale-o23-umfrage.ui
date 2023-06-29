@@ -18,6 +18,10 @@ html, body {
 
 }
 
+.rahmen {
+    border: 1px dot-dash #fe0000;
+}
+
 /* ostrale related theme stuff */
 .bs-red,
 .ostrale {
