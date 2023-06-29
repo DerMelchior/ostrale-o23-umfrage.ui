@@ -19,7 +19,7 @@ html, body {
 }
 
 .rahmen {
-    border: 1px dot-dash #fe0000;
+    border: 1px dot-dash #fe0000 !important;
 }
 
 /* ostrale related theme stuff */
