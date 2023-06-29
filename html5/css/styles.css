@@ -20,9 +20,12 @@ html, body {
 
 /* ostrale related theme stuff */
 .bs-red,
-.text-danger,
 .ostrale {
     color: #dc3545;
+}
+
+.ostrale-bg {
+    background-color: #dc3545;
 }
 
 
@@ -33,6 +36,7 @@ html, body {
 #surveyElement > div > form > div.sd-container-modern > div.sd-title.sd-container-modern__title {
     display: none;
 }
+
 #sv-nav-next > div > input {
    color: #dc3545;
    border: 1px solid #dc3545;
