@@ -1,6 +1,6 @@
 /* private scripts */
 
-var windows.ostrale_survey_locale = "de";
+var document.ostrale_survey_locale = "de";
 const survey = new Survey.Model(json);
 /* scripts called after dom content loaded */
 document.addEventListener("DOMContentLoaded", function() {

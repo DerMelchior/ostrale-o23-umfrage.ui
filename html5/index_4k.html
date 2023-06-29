@@ -35,36 +35,43 @@
 </head>
 <body id="page">
 <header class="d-none">
-
 </header>
 <main>
     <div class="container-xl">
-        <div class="d-flex col start vh-100">
-            BALL
-        </div>
-        <div class="d-flex col end vh-100">
-            <div class="d-flex top-50">
-                <h2 class="display-3 text-center">Beteilige Dich an der <span class="bs-red text-bold text-danger" style="font-size: 67px;">O</span>23 Umfrage!</h2>       
-                <a class="btn btn-lg btn-danger btn-xxl text-white" data-bs-toggle="modal" data-bs-target="#my-modal" data-language="de" role="button" id="BtnDE" onClick="call_startSurvey('de');">Starte Umfrage</a>
+        <div class="row">
+            <div class="d-flex col start vh-100" style="border:1px solid #ff0000;">
+                div.fullheight.left
             </div>
-            <div class="d-flex mh-50">
-                <h2 class="display-3 text-center">Take part in the survey about the biennial <span class="bs-red text-bold text-danger" style="font-size: 67px;">O</span>23!</h2>
-                <a class="btn btn-danger btn-lg btn-xxl text-white" data-bs-toggle="modal" data-bs-target="#my-modal" data-language="en" role="button" id="BtnEN" onClick="call_startSurvey('en');">Start the survey</a>
+            <div class="d-flex col end vh-100">
+                <div class="d-flex top-50" style="border: 1px solid #ff0000;">
+                    <h2 class="display-3 text-center">Beteilige Dich an der <span class="bs-red text-bold text-danger"
+                                                                                  style="font-size: 67px;">O</span>23
+                        Umfrage!</h2>
+                    <a class="btn btn-lg btn-danger btn-xxl text-white" data-bs-toggle="modal"
+                       data-bs-target="#my-modal" data-language="de" role="button" id="BtnDE"
+                       onClick="call_startSurvey('de');">Starte Umfrage</a>
+                </div>
+                <div class="d-flex mh-50" style="border: 1px solid #ff0000">
+                    <h2 class="display-3 text-center">Take part in the survey about the biennial <span
+                            class="bs-red text-bold text-danger" style="font-size: 67px;">O</span>23!</h2>
+                    <a class="btn btn-danger btn-lg btn-xxl text-white" data-bs-toggle="modal"
+                       data-bs-target="#my-modal" data-language="en" role="button" id="BtnEN"
+                       onClick="call_startSurvey('en');">Start the survey</a>
+                </div>
             </div>
-            
         </div>
-
     </div>
-  
 </main>
-<footer class="d-none">© Ostrale 2023 | All Rights Reserved | Version: 2.0.10-stable // @fehlercode42 </footer>
+<footer class="d-none">© Ostrale 2023 | All Rights Reserved | Version: 2.0.10-stable // @fehlercode42</footer>
+</body>
 <div id="my-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="my-modal-title" aria-hidden="true">
     <div class="modal-dialog modal-fullscreen modal-dialog-centered" role="document">
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title d-none" id="my-modal-title">Umfrage / Survey</h5>
-                <button class="carousel-control-prev-icon" disabled="true" aria-label="Zurück / Back">
-                    <span aria-hidden="true"><i class="fas fa-creative-commons fa-icons fa-arrow-circle-left"></i>"></span>
+                <button class="carousel-control-prev-icon" disabled aria-label="Zur&uml;ck / Back">
+                    <span aria-hidden="true"><i
+                            class="fas fa-creative-commons fa-icons fa-arrow-circle-left"></i>"></span>
                 </button>
                 <button class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
@@ -80,5 +87,4 @@
         </div>
     </div>
 </div>
-</body>
 </html>
