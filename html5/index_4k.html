@@ -40,21 +40,28 @@
 <main>
     <div class="container-xl">
         <div class="row">
-            <div class="d-flex col align-self-start vh-100"
+            <div class="d-flex col align-self-start min-vh-100"
                  style="background-image:url('./images/final_o23_plakat_734x1080px.jpg');background-repeat:no-repeat;background-size:contain;">
             </div>
-            <div class="d-flex col flex-column align-self-end vh-100">
+            <div class="d-flex col flex-column align-self-end min-vh-100">
 
                 <div class="d-flex align-items-center align-self-center h-50 d-inline-block"
                      style="border: 1px solid darkgrey;border-radius: 2rem;">
-
-                    <h2 class="display-3 text-center">Beteilige Dich an der <span class="bs-red text-bold text-danger"
-                                                                                  style="font-size: 67px;">O</span>23
-                        Umfrage!</h2>
-                    </br>
-                    <a class="btn btn-lg btn-danger btn-xxl text-white" data-bs-toggle="modal"
-                       data-bs-target="#my-modal" data-language="de" role="button" id="BtnDE"
-                       onClick="call_startSurvey('de');">Starte Umfrage</a>
+                    <div class="row">
+                        <div class="col">
+                            <h2 class="display-3 text-center">Beteilige Dich an der
+                                <span class="bs-red text-bold text-danger" style="font-size: 67px;">O</span>23 Umfrage!
+                            </h2>
+                        </div>
+                        </br>
+                        <div class="row">
+                            <div class="col">
+                                <a class="btn btn-lg btn-danger btn-xxl text-white" data-bs-toggle="modal"
+                                   data-bs-target="#my-modal" data-language="de" role="button" id="BtnDE"
+                                   onClick="call_startSurvey('de');">Starte Umfrage</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="d-flex align-items-center align-self-center h-50 d-inline-block"
                      style="border: 1px solid darkgrey;border-radius: 2rem;">
