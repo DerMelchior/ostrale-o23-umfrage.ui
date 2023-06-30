@@ -1,9 +1,10 @@
 /* private scripts */
 /* import './ostrale023-umfrage_json';*/
-import {json} from '/js/ostrale023-umfrage_json';
+import {json} from '/js/ostrale023-umfrage_json.js';
+import jQuery from '/js/jquery-3.7.0.min.js';
 import Survey from '/js/survey.core.min.js';
-import surveyLocalisation from '/js/survey.i18n.min';
-import surveyCss from '/js/bootstrap-integration.min';
+import surveyLocalisation from '/js/survey.i18n.min.js';
+import surveyCss from '/js/bootstrap-integration.min.js';
 
 window.ostrale_survey_locale = "de";
 window.survey = new Survey.Model(json);
