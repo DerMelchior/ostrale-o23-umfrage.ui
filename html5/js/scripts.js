@@ -2,9 +2,13 @@
 /* import './ostrale023-umfrage_json';*/
 import json from './ostrale023-umfrage_json';
 import Survey from './survey.core.min.js';
+import surveyLocalisation from 'survey.i18n.min';
+import surveyCss from './bootstrap-integration.min';
 
 window.ostrale_survey_locale = "de";
 window.survey = new Survey.Model(json);
+var css = new surveyCss();
+var locale = surveyLocalisation.locales();
 
 export function call_startSurvey(locale) {
     window.ostrale_survey_locale = locale;
