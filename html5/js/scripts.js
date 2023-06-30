@@ -2,21 +2,21 @@
 /* import './ostrale023-umfrage_json';*/
 import {json} from '/js/ostrale023-umfrage_json.js';
 import jquery from '/js/jquery.min.js';
-import survey from '/js/survey.core.min.js';
+import Survey from '/js/survey.core.min.js';
 import '/js/survey.jquery.min';
 import surveyLocalisation from '/js/survey.i18n.min.js';
 import surveyCss from '/js/bootstrap-integration.min.js';
 
 window.ostrale_survey_locale = "de";
-var survey = new Survey.Model(json);
+var o23survey = new Survey.Model(json);
 var css = new surveyCss();
 var locale = surveyLocalisation.locales();
 
 export function call_startSurvey(locale) {
     window.ostrale_survey_locale = locale;
-    $("#surveyElement").survey({model: survey, locale: locale});
+    $("#surveyElement").survey({model: o23survey, locale: locale});
     console.log('document.locale: ' + window.ostrale_survey_locale);
-    console.log('survey.locale: ' + window.survey.locale);
+    console.log('survey.locale: ' + window.o23survey.locale);
 };
 /* scripts called after dom content loaded */
 document.addEventListener("DOMContentLoaded", function () {
@@ -26,15 +26,15 @@ document.addEventListener("DOMContentLoaded", function () {
     var SurveyModal = document.getElementById("my-modal");
 
     console.log('DOMContentLoaded! ')
-    window.survey.supportedLocales = ["en", "de"];
-    window.survey.defaultLocale = "en";
-    window.survey.onComplete.add((sender, options) => {
+    window.o23survey.supportedLocales = ["en", "de"];
+    window.o23survey.defaultLocale = "en";
+    window.o23survey.onComplete.add((sender, options) => {
         console.log("DATA: " + JSON.stringify(sender.data, null, 3));
     });
 
-    window.survey.onStarted.add(() => {
-        window.survey.showNavigationButtons = false;
-        window.survey.locale = window.ostrale_survey_locale;
+    window.o23survey.onStarted.add(() => {
+        window.o23survey.showNavigationButtons = false;
+        window.o23survey.locale = window.ostrale_survey_locale;
     });
 
     SurveyModal.addEventListener("show.bs.modal", function (event) {
@@ -45,9 +45,9 @@ document.addEventListener("DOMContentLoaded", function () {
         console.log('data-bs-locale: ' + button.getAttribute("data-bs-locale"));
         // Change survey language
         //myModal.querySelector(".modal-title").innerText = titleData;
-        document.survey.locale = document.ostrale_survey_locale;
+        document.o23survey.locale = document.ostrale_survey_locale;
         console.log('ostrale_survey_locale: ' + document.ostrale_survey_locale);
-        console.log('survey.locale: ' + document.survey.locale);
+        console.log('o23survey.locale: ' + document.o23survey.locale);
     });
 
     /*
