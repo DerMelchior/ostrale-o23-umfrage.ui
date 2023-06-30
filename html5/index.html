@@ -119,16 +119,17 @@
     </div>
 </main>
 <footer class="d-none">© Ostrale 2023 | All Rights Reserved | Version: 2.0.10-stable // @fehlercode42</footer>
-</body>
+
 <div id="my-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="my-modal-title" aria-hidden="true">
     <div class="modal-dialog modal-xxl modal-dialog-centered" role="document">
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title d-none" id="my-modal-title">Umfrage / Survey</h5>
-                <button class="carousel-control-prev-icon" disabled aria-label="Zur&uml;ck / Back">
+                <button class="btn carousel-control-prev-icon" disabled data-bs-target="#emy-modal"
+                        data-bs-previous="true" aria-label="Zur&uml;ck / Back">
                     <span aria-hidden="true"><i class="fas fa-creative-commons fa-icons fa-arrow-circle-left"></i>&times</span>
                 </button>
-                <button class="close" data-bs-toggle="#my-modal" data-bs-backdrop="#my-modal"
+                <button class="btn close" data-bs-target="#my-modal" data-bs-toggle="modal" data-bs-dismiss="modal"
                         aria-label="Close">
                     <span aria-hidden="true">&times</span>
                 </button>
@@ -143,4 +144,5 @@
         </div>
     </div>
 </div>
+</body>
 </html>
