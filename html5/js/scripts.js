@@ -1,26 +1,27 @@
 /* private scripts */
 
-var ostrale_survey_locale = "de";
-const survey = new Survey.Model(json);
+window.ostrale_survey_locale = "de";
+window.survey = new Survey.Model(json);
 /* scripts called after dom content loaded */
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
 
     var btnDE = document.getElementById("BtnDE");
     var btnEN = document.getElementById("BtnEN");
     var SurveyModal = document.getElementById("my-modal");
 
     console.log('DOMContentLoaded! ')
-    survey.supportedLocales = ["en", "de"];
-    survey.defaultLocale = "en";
-    survey.onComplete.add((sender, options) => {
-        console.log("DATA: "+JSON.stringify(sender.data, null, 3));
-    }); 
-    survey.onStarted.add(() => {
-        survey.showNavigationButtons = false;
-        survey.locale = document.ostrale_survey_locale;
+    window.survey.supportedLocales = ["en", "de"];
+    window.survey.defaultLocale = "en";
+    window.survey.onComplete.add((sender, options) => {
+        console.log("DATA: " + JSON.stringify(sender.data, null, 3));
     });
 
-    SurveyModal.addEventListener("show.bs.modal", function(event) {
+    window.survey.onStarted.add(() => {
+        window.survey.showNavigationButtons = false;
+        window.survey.locale = window.ostrale_survey_locale;
+    });
+
+    SurveyModal.addEventListener("show.bs.modal", function (event) {
         // Get the button that triggered the modal
         var button = event.relatedTarget;
         // Extract value from the custom data-* attribute
@@ -37,11 +38,11 @@ document.addEventListener("DOMContentLoaded", function() {
         btnDE.addEventListener("click", function() {SurveyModal.show(); });
         btnEN.addEventListener("click", function() {SurveyModal.show(); });
     */
-    function call_startSurvey(locale) {
+    window.call_startSurvey = function call_startSurvey(locale) {
         document.ostrale_survey_locale = locale;
         $("#surveyElement").survey({model: survey, locale: locale});
-        console.log('document.locale: ' + document.ostrale_survey_locale);
-        console.log('survey.locale: ' + document.survey.locale);
+        console.log('document.locale: ' + window.ostrale_survey_locale);
+        console.log('survey.locale: ' + window.survey.locale);
 
     }
 
