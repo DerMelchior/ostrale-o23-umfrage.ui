@@ -1,6 +1,7 @@
 /* private scripts */
 /* import './ostrale023-umfrage_json';*/
 import {json} from '/js/ostrale023-umfrage_json.js';
+import '/js/bootstrap.bundle.min.js';
 import '/js/survey.jquery.min.js';
 import '/js/survey.core.min.js';
 import '/js/survey.i18n.min.js';
@@ -13,7 +14,7 @@ var o23survey = new Survey.Model(json);
 var css = new surveyCss();
 var o23locale = surveyLocalisation.locales();
 
-function call_startSurvey(locale) {
+export function call_startSurvey(locale) {
     window.ostrale_survey_locale = locale;
     $("#surveyElement").survey({model: o23survey, locale: locale});
     console.log('document.locale: ' + window.ostrale_survey_locale);

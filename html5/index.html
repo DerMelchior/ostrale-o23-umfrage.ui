@@ -17,8 +17,9 @@
     <!-- Font Awesome CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
           crossorigin="anonymous"/>
-    <!-- JQuery JS-->
+    <!-- JQuery JS
     <script ASYNC src="https://unpkg.com/jquery@3.6.4/dist/jquery.min.js" crossorigin="anonymous"></script>
+    -->
     <!--<script type="module" src="https://unpkg.com/survey-jquery@1.9.92/survey.jquery.min.js"></script>-->
     <!-- SurveyJS Theme CSS -->
     <!--<link href="https://unpkg.com/survey-jquery/modern.min.css" type="text/css" rel="stylesheet" crossorigin="anonymous"/>-->
@@ -81,7 +82,8 @@
                                 <div class="row align-items-center align-bottom">
                                     <div class="d-flex col align-self-center start-50 align-bottom">
                                         <a class = "btn btn-lg btn-danger btn-xxl text-white display-3 rounded-3 shadow"
-                                           data-bs-locale = "de" data-bs-target = "#my-modal" href = "#my-modal"
+                                           data-bs-locale = "de" data-bs-target = "#my-modal" data-bs-toggle = "modal"
+                                           onclick = "window.call_startSurvey('de');"
                                            id = "BtnDE" role = "button" >Starte
                                                                          Umfrage</a >
                                     </div>
@@ -108,7 +110,8 @@
                                 <div class="row align-items-center align-bottom">
                                     <div class="d-flex col align-self-center start-50 align-bottom">
                                         <a class = "btn btn-danger btn-lg btn-xxl shadow text-white display-3 rounded-3"
-                                           data-bs-locale = "en" data-bs-target = "#my-modal" href = "#my-modal"
+                                           data-bs-locale = "en" data-bs-target = "#my-modal" data-bs-toggle = "modal"
+                                           onclick = "window.call_startSurvey('en');"
                                            id = "BtnEN" role = "button" >Start the survey</a >
                                     </div>
                                 </div>
