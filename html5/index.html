@@ -126,7 +126,7 @@
 <script type = "application/javascript" >
     function call_startSurveyDE() {
         window.ostrale_survey_locale = 'de';
-        o23survey = new Survey.Model(json);
+        o23survey = new window.survey.Model(json);
         $("#surveyElement").survey({model: o23survey, locale: 'de'});
         o23survey.locale = 'de';
         console.log('document.locale: ' + window.ostrale_survey_locale);
@@ -135,7 +135,7 @@
 
     function call_startSurveyEN() {
         window.ostrale_survey_locale = 'en';
-        o23survey = new Survey.Model(json);
+        o23survey = new window.survey.Model(json);
         $("#surveyElement").survey({model: o23survey, locale: 'en'});
         o23survey.locale = 'en';
         console.log('document.locale: ' + window.ostrale_survey_locale);
