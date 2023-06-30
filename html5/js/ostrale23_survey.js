@@ -1,4 +1,4 @@
-{
+var json = {
  "locale": "de",
  "title": "Umfrage Ostrale 2023",
  "logo": "https://www.ostrale.de/img/core/OSTRALE_Logo_de.jpg",

@@ -134,7 +134,7 @@
         window.ostrale_survey_locale = 'de';
         const survey = new Survey.Model(json);
         $("#surveyElement").survey({model: survey, locale: 'de'});*/
-        $("#surveyElement").survey({model: o23survey, locale: 'de'});
+        $("#surveyElement").Survey({model: o23survey, locale: 'de'});
         o23survey.locale = 'de';
         console.log('document.locale: ' + window.ostrale_survey_locale);
         console.log('survey.locale: ' + o23survey.locale);
@@ -144,7 +144,7 @@
         window.ostrale_survey_locale = 'en';
 
 
-        $("#surveyElement").survey({model: o23survey, locale: 'en'});
+        $("#surveyElement").Survey({model: o23survey, locale: 'en'});
         o23survey.locale = 'en';
         console.log('document.locale: ' + window.ostrale_survey_locale);
         console.log('survey.locale: ' + o23survey.locale);
