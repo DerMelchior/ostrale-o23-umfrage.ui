@@ -1,8 +1,8 @@
 /* /js/ostrale023-umfrage.js */
 import {json} from './ostrale023-umfrage_json.js';
-import {Survey} from './survey.jquery.min.js';
+import './survey.jquery.min.js';
 
-const o23survey = new Survey.Model(json);
+const o23survey = new survey.Model(json);
 o23survey.supportedLocales = ["en", "de"];
 o23survey.defaultLocale = "en";
 o23survey.onComplete.add((sender, options) => {
