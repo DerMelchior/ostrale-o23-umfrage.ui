@@ -58,11 +58,11 @@ div.sd-page div.sd-body__page {
 }
 
 .sv-components-column .sv-components-column--expandable .sd-body .sd-body--responsive {
-    width: 1110px;
+    width: 1110px!important;
 }
 
 #sq_112 > div > fieldset > div:nth-child(5) > div > label > div > div {
-    border: 2px solid red;
+    border: 2px solid #dc3545!important;
 }
 
 #sv-nav-next > div > input {
