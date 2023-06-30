@@ -22,10 +22,10 @@
     -->
     <script ASYNC crossorigin = "anonymous" src = "./js/jquery-3.7.0.min.js" type = "text/javascript" ></script >
 
-    <script src = "https://unpkg.com/survey-jquery@1.9.92/survey.jquery.min.js" type = "text/javascript" ></script >
+    <script src = "https://unpkg.com/survey-jquery@1.9.95/survey.jquery.min.js" ></script >
+    <link href = "https://unpkg.com/survey-jquery@1.9.95/defaultV2.min.css" rel = "stylesheet" />
     <!-- SurveyJS Theme CSS -->
     <!--<link href="https://unpkg.com/survey-jquery/modern.min.css" type="text/css" rel="stylesheet" crossorigin="anonymous"/>-->
-    <link rel = "stylesheet" href = "https://unpkg.com/survey-jquery/defaultV2.min.css" crossorigin = "anonymous" />
     <!--<link rel="stylesheet" href="./css/normalize.min.css" crossorigin="anonymous" />-->
     <!-- Apply the Bootstrap theme -->
 
@@ -134,6 +134,10 @@
     function call_startSurveyDE() {
         let ostralesurvey = new Survey.Model(json);
         console.log('o23survey: ' + ostralesurvey);
+        survey.onComplete.add((sender, options) => {
+            console.log(JSON.stringify(sender.data, null, 3));
+        });
+
         /*import {json} from '/js/ostrale023-umfrage_json.js';
         window.ostrale_survey_locale = 'de';
         const survey = new Survey.Model(json);
@@ -147,6 +151,9 @@
 
     function call_startSurveyEN() {
         let survey = new Survey.Model(json);
+        survey.onComplete.add((sender, options) => {
+            console.log(JSON.stringify(sender.data, null, 3));
+        });
 
         survey.locale = 'en';
         $("#surveyElement").Survey({model: survey, locale: 'en'});
