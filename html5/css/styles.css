@@ -57,12 +57,28 @@ div.sd-page div.sd-body__page {
     width: 1110px;
 }
 
-.sv-components-column .sv-components-column--expandable .sd-body .sd-body--responsive {
-    width: 1110px!important;
+div.sv-components-column div.sv-components-column--expandable div.sd-body div.sd-body--responsive {
+    width: 1110px !important;
 }
 
-#sq_112 > div > fieldset > div:nth-child(5) > div > label > div > div {
-    border: 2px solid #dc3545!important;
+div.sd-page div.sd-body__page {
+    background-color: lightgrey;
+}
+
+div.sd-question-content {
+
+}
+
+div.sd-imagepicker__image {
+    background-size: cover;
+}
+
+div.sd-imagepicker__item.sd-imagepicker__item--allowhover {
+    border: 2px solid #dc3545 !important;
+}
+
+div.sd-imagepicker__image-container {
+    background-color: lightgrey;
 }
 
 #sv-nav-next > div > input {
