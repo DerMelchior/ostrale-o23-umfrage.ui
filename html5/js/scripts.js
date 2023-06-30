@@ -3,7 +3,7 @@
 import {json} from '/js/ostrale023-umfrage_json.js';
 
 import {survey} from '/js/survey.core.min.js';
-import '/js/survey.jquery.min';
+import '/js/survey.jquery.min.js';
 import surveyLocalisation from '/js/survey.i18n.min.js';
 import surveyCss from '/js/bootstrap-integration.min.js';
 
