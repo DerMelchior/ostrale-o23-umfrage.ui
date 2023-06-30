@@ -79,7 +79,7 @@
                                 <div class="row align-items-center align-bottom">
                                     <div class="d-flex col align-self-center start-50 align-bottom">
                                         <a class="btn btn-lg btn-danger btn-xxl text-white display-3 rounded-3 shadow"
-                                           data-bs-toggle="modal" data-bs-target="#my-modal" data-language="de"
+                                           data-bs-toggle="modal" data-bs-target="#my-modal" data-bs-locale="de"
                                            role="button" id="BtnDE" onclick="call_startSurvey('de');">Starte Umfrage</a>
                                     </div>
                                 </div>
@@ -105,7 +105,7 @@
                                 <div class="row align-items-center align-bottom">
                                     <div class="d-flex col align-self-center start-50 align-bottom">
                                         <a class="btn btn-danger btn-lg btn-xxl shadow text-white display-3 rounded-3"
-                                           data-bs-toggle="modal" data-bs-target="#my-modal" data-language="en"
+                                           data-bs-toggle="modal" data-bs-target="#my-modal" data-bs-locale="en"
                                            role="button" id="BtnEN" onclick="call_startSurvey('en');">Start the
                                             survey</a>
                                     </div>
@@ -135,7 +135,7 @@
                 </button>
             </div>
             <div class="modal-body">
-                <div id="surveyElement" style="/*display: inline-flex;*/">
+                <div id="surveyElement" style="display: inline-flex;">
                     <survey params="survey: model"></survey>
                     <survey params="survey.defaultLocale: en"></survey>
                     <survey params="survey.locale: de"></survey>
