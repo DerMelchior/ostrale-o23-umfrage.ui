@@ -126,8 +126,20 @@
         </div>
     </div>
 </main>
+<script crossorigin = "anonymous" src = "./js/ostrale23-umfrage.js" ></script >
 <script type = "application/javascript" >
+    function call_startSurveyDE() {
 
+        console.log('o23survey: ' + window.o23survey);
+        /*import {json} from '/js/ostrale023-umfrage_json.js';
+        window.ostrale_survey_locale = 'de';
+        const survey = new Survey.Model(json);
+        $("#surveyElement").survey({model: survey, locale: 'de'});*/
+        $("#surveyElement").Survey({model: o23survey, locale: 'de'});
+        o23survey.locale = 'de';
+        console.log('document.locale: ' + window.ostrale_survey_locale);
+        console.log('survey.locale: ' + o23survey.locale);
+    };
 
     function call_startSurveyEN() {
         window.ostrale_survey_locale = 'en';

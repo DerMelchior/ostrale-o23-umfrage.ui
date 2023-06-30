@@ -10,7 +10,7 @@ import '/js/survey.i18n.min.js';
 /*import '/js/bootstrap-integration.min.js';*/
 
 window.ostrale_survey_locale = "de";
-window.o23survey = new Survey.Model(json);
+export default window.o23survey = new Survey.Model(json);
 var css = new surveyCss();
 var o23locale = surveyLocalisation.locales();
 
@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded", function () {
         window.ostrale_survey_locale = button.getAttribute("data-bs-locale");
         console.log('data-bs-locale: ' + button.getAttribute("data-bs-locale"));
         // Change survey language
-        call_startSurvey(button.getAttribute("data-bs-locale"));
+        call_startSurveyDE();
         //myModal.querySelector(".modal-title").innerText = titleData;
         o23survey.locale = window.ostrale_survey_locale;
         console.log('ostrale_survey_locale: ' + window.ostrale_survey_locale);
