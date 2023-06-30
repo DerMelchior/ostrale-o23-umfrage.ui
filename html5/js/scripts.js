@@ -10,13 +10,13 @@ import '/js/survey.i18n.min.js';
 /*import '/js/bootstrap-integration.min.js';*/
 
 window.ostrale_survey_locale = "de";
-const o23survey = new Survey.Model(json);
+document.o23survey = new Survey.Model(json);
 var css = new surveyCss();
 var o23locale = surveyLocalisation.locales();
 
 export default function call_startSurvey({locale: string}) {
     window.ostrale_survey_locale = locale;
-    $("#surveyElement").survey({model: o23survey, locale: locale});
+    $("#surveyElement").survey({model: document.o23survey, locale: locale});
     console.log('document.locale: ' + window.ostrale_survey_locale);
     console.log('survey.locale: ' + window.o23survey.locale);
 };

@@ -126,11 +126,12 @@
 </main>
 <script type = "application/javascript" >
     function call_startSurveyDE() {
-        import {json} from '/js/ostrale023-umfrage_json.js';
+        /*import {json} from '/js/ostrale023-umfrage_json.js';
         window.ostrale_survey_locale = 'de';
         const survey = new Survey.Model(json);
-        $("#surveyElement").survey({model: survey, locale: 'de'});
-        survey.locale = 'de';
+        $("#surveyElement").survey({model: survey, locale: 'de'});*/
+        $("#surveyElement").survey({model: document.o23survey, locale: 'de'});
+        document.o23survey.locale = 'de';
         console.log('document.locale: ' + window.ostrale_survey_locale);
         console.log('survey.locale: ' + o23survey.locale);
     };
