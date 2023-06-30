@@ -132,21 +132,21 @@
 <!--<script crossorigin = "anonymous" src = "./js/ostrale23-umfrage.js" type = "text/javascript" ></script >-->
 <script type = "text/javascript" >
     function call_startSurveyDE() {
-        const survey = new survey.Model(json);
-        console.log('o23survey: ' + survey);
+        let ostralesurvey = new survey.Model(json);
+        console.log('o23survey: ' + ostralesurvey);
         /*import {json} from '/js/ostrale023-umfrage_json.js';
         window.ostrale_survey_locale = 'de';
         const survey = new Survey.Model(json);
         $("#surveyElement").survey({model: survey, locale: 'de'});*/
-        survey.locale = 'de';
-        $("#surveyElement").Survey({model: survey, locale: 'de'});
+        ostralesurvey.locale = 'de';
+        $("#surveyElement").Survey({model: ostralesurvey, locale: 'de'});
 
         console.log('document.locale: ' + window.ostrale_survey_locale);
-        console.log('survey.locale: ' + o23survey.locale);
-    };
+        console.log('survey.locale: ' + ostralesurvey.locale);
+    }
 
     function call_startSurveyEN() {
-        const survey = new survey.Model(json);
+        let survey = new survey.Model(json);
 
         survey.locale = 'en';
         $("#surveyElement").Survey({model: survey, locale: 'en'});
