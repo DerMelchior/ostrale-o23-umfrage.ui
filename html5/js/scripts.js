@@ -26,45 +26,43 @@ document.addEventListener("DOMContentLoaded", function () {
     var btnEN = document.getElementById("BtnEN");
     var SurveyModal = document.getElementById("my-modal");
 
-    function call_startSurvey(locale) {
-        window.ostrale_survey_locale = locale;
-        $("#surveyElement").survey({model: o23survey, locale: locale});
-        console.log('document.locale: ' + window.ostrale_survey_locale);
-        console.log('survey.locale: ' + window.o23survey.locale);
-    };
+
     console.log('DOMContentLoaded! ')
-    window.o23survey.supportedLocales = ["en", "de"];
-    window.o23survey.defaultLocale = "en";
-    window.o23survey.onComplete.add((sender, options) => {
+
+    o23survey.supportedLocales = ["en", "de"];
+    o23survey.defaultLocale = "en";
+    o23survey.onComplete.add((sender, options) => {
         console.log("DATA: " + JSON.stringify(sender.data, null, 3));
     });
 
-    window.o23survey.onStarted.add(() => {
-        window.o23survey.showNavigationButtons = false;
-        window.o23survey.locale = window.ostrale_survey_locale;
+    o23survey.onStarted.add(() => {
+        o23survey.showNavigationButtons = false;
+        o23survey.locale = window.ostrale_survey_locale;
     });
 
-    SurveyModal.addEventListener("modal.fade.show", function (event) {
-        console.log('event getriggert');
+    SurveyModal.addEventListener("modal.bs.show", function (event) {
+        console.log('event modal.bs.show getriggert');
         // Get the button that triggered the modal
         var button = event.relatedTarget;
         // Extract value from the custom data-* attribute
-        document.ostrale_survey_locale = button.getAttribute("data-bs-locale");
+        window.ostrale_survey_locale = button.getAttribute("data-bs-locale");
         console.log('data-bs-locale: ' + button.getAttribute("data-bs-locale"));
         // Change survey language
         call_startSurvey(button.getAttribute("data-bs-locale"));
         //myModal.querySelector(".modal-title").innerText = titleData;
-        document.o23survey.locale = document.ostrale_survey_locale;
-        console.log('ostrale_survey_locale: ' + document.ostrale_survey_locale);
-        console.log('o23survey.locale: ' + document.o23survey.locale);
+        o23survey.locale = window.ostrale_survey_locale;
+        console.log('ostrale_survey_locale: ' + window.ostrale_survey_locale);
+        console.log('o23survey.locale: ' + o23survey.locale);
     });
 
 
     btnDE.addEventListener("click", function () {
+        console.log('event btnDE.click getriggert');
         SurveyModal.show();
 
     });
     btnEN.addEventListener("click", function () {
+        console.log('event btnEN.click getriggert');
         SurveyModal.show();
     });
 
