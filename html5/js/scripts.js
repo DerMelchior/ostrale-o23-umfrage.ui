@@ -3,14 +3,14 @@
 import {json} from '/js/ostrale023-umfrage_json.js';
 import jquery from '/js/jquery.min.js';
 import Survey from '/js/survey.core.min.js';
-import '/js/survey.jquery.min';
+/*import '/js/survey.jquery.min';*/
 import surveyLocalisation from '/js/survey.i18n.min.js';
 import surveyCss from '/js/bootstrap-integration.min.js';
 
 window.ostrale_survey_locale = "de";
 var o23survey = new Survey.Model(json);
 var css = new surveyCss();
-var locale = surveyLocalisation.locales();
+var o23locale = surveyLocalisation.locales();
 
 export function call_startSurvey(locale) {
     window.ostrale_survey_locale = locale;
