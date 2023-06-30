@@ -1,7 +1,7 @@
 /* /js/ostrale023-umfrage.js */
 import {json} from './ostrale023-umfrage_json';
 
-export const survey = new Survey.Model(json);
+const survey = new Survey.Model(json);
 survey.supportedLocales = ["en", "de"];
 survey.defaultLocale = "en";
 survey.onComplete.add((sender, options) => {
