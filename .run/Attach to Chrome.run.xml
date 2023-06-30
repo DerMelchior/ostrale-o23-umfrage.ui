@@ -1,9 +1,8 @@
 <component name="ProjectRunConfigurationManager">
     <configuration default="false" name="Attach to Chrome" type="ChromiumRemoteDebugType" factoryName="Chromium Remote"
-                   host="806708e73a2c357f1c85f6a5af48a6d2.balena-devices.com" port="35173" restartOnDisconnect="true">
-        <mapping url="https://806708e73a2c357f1c85f6a5af48a6d2.balena-devices.com" local-file="$PROJECT_DIR$/html5"/>
-        <mapping url="https://806708e73a2c357f1c85f6a5af48a6d2.balena-devices.com/index.html"
-                 local-file="$PROJECT_DIR$/html5/index.html"/>
+                   host="192.168.188.76" port="35173" restartOnDisconnect="true">
+        <mapping url="http://192.168.188.76" local-file="$PROJECT_DIR$/html5"/>
+        <mapping url="http://192.168.188.76/index.html" local-file="$PROJECT_DIR$/html5/index.html"/>
         <method v="2"/>
     </configuration>
 </component>

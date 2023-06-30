@@ -44,19 +44,36 @@ html, body {
 
 
 /* surveyJS related stuff */
+
 #surveyElement > div > form > div.sd-container-modern > div.sd-title.sd-container-modern__title {
     display: none;
 }
 
-#sv-nav-next > div > input {
-   color: #dc3545;
-   border: 1px solid #dc3545;
+div.sd-page div.sd-body__page {
+
 }
 
- 
+#sp_112 {
+    width: 1110px;
+}
+
+.sv-components-column .sv-components-column--expandable .sd-body .sd-body--responsive {
+    width: 1110px;
+}
+
+#sq_112 > div > fieldset > div:nth-child(5) > div > label > div > div {
+    border: 2px solid red;
+}
+
+#sv-nav-next > div > input {
+    color: #dc3545;
+    border: 1px solid #dc3545;
+}
+
+
 /* (320x480) iPhone (Original, 3G, 3GS) */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-  /* insert styles here */
+    /* insert styles here */
 }
 
 

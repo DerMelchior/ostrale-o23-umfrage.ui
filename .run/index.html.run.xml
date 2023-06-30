@@ -1,14 +1,12 @@
 <component name="ProjectRunConfigurationManager">
     <configuration default="false" name="index.html" type="JavascriptDebugType" nameIsGenerated="true"
-                   engineId="37cae5b9-e8b2-4949-9172-aafa37fbc09c"
-                   uri="https://806708e73a2c357f1c85f6a5af48a6d2.balena-devices.com:35173/index.html"
+                   engineId="37cae5b9-e8b2-4949-9172-aafa37fbc09c" uri="http://192.168.188.76/index.html"
                    useFirstLineBreakpoints="true">
         <mapping url="https://806708e73a2c357f1c85f6a5af48a6d2.balena-devices.com/css"
                  local-file="$PROJECT_DIR$/html5/css"/>
         <mapping url="https://806708e73a2c357f1c85f6a5af48a6d2.balena-devices.com/js"
                  local-file="$PROJECT_DIR$/html5/js"/>
-        <mapping url="https://806708e73a2c357f1c85f6a5af48a6d2.balena-devices.com/index.html"
-                 local-file="$PROJECT_DIR$/html5/index.html"/>
+        <mapping url="http://192.168.188.76/index.html" local-file="$PROJECT_DIR$/html5/index.html"/>
         <method v="2"/>
     </configuration>
 </component>
