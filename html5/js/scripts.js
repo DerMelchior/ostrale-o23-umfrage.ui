@@ -14,7 +14,7 @@ var o23survey = new Survey.Model(json);
 var css = new surveyCss();
 var o23locale = surveyLocalisation.locales();
 
-export function call_startSurvey(locale) {
+export default function call_startSurvey({locale: string}) {
     window.ostrale_survey_locale = locale;
     $("#surveyElement").survey({model: o23survey, locale: locale});
     console.log('document.locale: ' + window.ostrale_survey_locale);
