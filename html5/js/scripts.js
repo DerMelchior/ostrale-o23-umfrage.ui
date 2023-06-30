@@ -7,7 +7,7 @@ import '/js/survey.core.min.js';
 import '/js/survey.i18n.min.js';
 
 /*import surveyLocalisation from '/js/survey.i18n.min.js';*/
-import '/js/bootstrap-integration.min.js';
+/*import '/js/bootstrap-integration.min.js';*/
 
 window.ostrale_survey_locale = "de";
 var o23survey = new Survey.Model(json);

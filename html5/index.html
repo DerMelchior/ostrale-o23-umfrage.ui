@@ -83,7 +83,7 @@
                                     <div class="d-flex col align-self-center start-50 align-bottom">
                                         <a class = "btn btn-lg btn-danger btn-xxl text-white display-3 rounded-3 shadow"
                                            data-bs-locale = "de" data-bs-target = "#my-modal" data-bs-toggle = "modal"
-                                           onclick = "call_startSurvey('de');"
+                                           onclick = "call_startSurveyDE();"
                                            id = "BtnDE" role = "button" >Starte
                                                                          Umfrage</a >
                                     </div>
@@ -111,7 +111,7 @@
                                     <div class="d-flex col align-self-center start-50 align-bottom">
                                         <a class = "btn btn-danger btn-lg btn-xxl shadow text-white display-3 rounded-3"
                                            data-bs-locale = "en" data-bs-target = "#my-modal" data-bs-toggle = "modal"
-                                           onclick = "window.call_startSurvey('en');"
+                                           onclick = "window.call_startSurveyEN();"
                                            id = "BtnEN" role = "button" >Start the survey</a >
                                     </div>
                                 </div>
@@ -124,11 +124,22 @@
     </div>
 </main>
 <script type = "application/javascript" >
-    function call_startSurvey2({locale: string}) {
-        window.ostrale_survey_locale = locale;
+    function call_startSurveyDE() {
+        window.ostrale_survey_locale = 'de';
+        o23survey = new Survey.Model(json);
         $("#surveyElement").survey({model: o23survey, locale: 'de'});
+        o23survey.locale = 'de';
         console.log('document.locale: ' + window.ostrale_survey_locale);
-        console.log('survey.locale: ' + window.o23survey.locale);
+        console.log('survey.locale: ' + o23survey.locale);
+    };
+
+    function call_startSurveyEN() {
+        window.ostrale_survey_locale = 'en';
+        o23survey = new Survey.Model(json);
+        $("#surveyElement").survey({model: o23survey, locale: 'en'});
+        o23survey.locale = 'en';
+        console.log('document.locale: ' + window.ostrale_survey_locale);
+        console.log('survey.locale: ' + o23survey.locale);
     };
 </script >
 <footer class="d-none">© Ostrale 2023 | All Rights Reserved | Version: 2.0.10-stable // @fehlercode42</footer>
