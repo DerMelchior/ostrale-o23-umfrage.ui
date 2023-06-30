@@ -58,11 +58,14 @@ document.addEventListener("DOMContentLoaded", function () {
         console.log('o23survey.locale: ' + document.o23survey.locale);
     });
 
-    /*
-        btnDE.addEventListener("click", function() {SurveyModal.show(); });
-        btnEN.addEventListener("click", function() {SurveyModal.show(); });
-    */
 
+    btnDE.addEventListener("click", function () {
+        SurveyModal.show();
+
+    });
+    btnEN.addEventListener("click", function () {
+        SurveyModal.show();
+    });
 
 
 });
