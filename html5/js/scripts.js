@@ -1,6 +1,6 @@
 /* private scripts */
 /* import './ostrale023-umfrage_json';*/
-import {json} from './ostrale023-umfrage_json';
+import json from './ostrale023-umfrage_json';
 import Survey from './survey.core.min.js';
 
 window.ostrale_survey_locale = "de";
