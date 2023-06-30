@@ -48,7 +48,7 @@
 <header class="d-none">
 </header>
 <script type = "text/javascript" >
-    const survey = new survey.Model(json);
+
 </script >
 <main>
     <div class="container-fluid"
@@ -132,24 +132,25 @@
 <script crossorigin = "anonymous" src = "./js/ostrale23-umfrage.js" type = "text/javascript" ></script >
 <script type = "text/javascript" >
     function call_startSurveyDE() {
-
+        const survey = new survey.Model(json);
         console.log('o23survey: ' + survey);
         /*import {json} from '/js/ostrale023-umfrage_json.js';
         window.ostrale_survey_locale = 'de';
         const survey = new Survey.Model(json);
         $("#surveyElement").survey({model: survey, locale: 'de'});*/
+        survey.locale = 'de';
         $("#surveyElement").Survey({model: survey, locale: 'de'});
-        o23survey.locale = 'de';
+
         console.log('document.locale: ' + window.ostrale_survey_locale);
         console.log('survey.locale: ' + o23survey.locale);
     };
 
     function call_startSurveyEN() {
-        window.ostrale_survey_locale = 'en';
+        const survey = new survey.Model(json);
 
-
-        $("#surveyElement").Survey({model: survey, locale: 'en'});
         survey.locale = 'en';
+        $("#surveyElement").Survey({model: survey, locale: 'en'});
+
         console.log('document.locale: ' + window.ostrale_survey_locale);
         console.log('survey.locale: ' + o23survey.locale);
     };
