@@ -30,6 +30,7 @@
     <link rel="icon" type="image/vnd.icon" href="./images/favicon.ico"/>
     <script ASYNC src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
             crossorigin="anonymous"></script>
+    <!--
     <script type="module" ASYNC src="https://unpkg.com/survey-core/survey.i18n.min.js" crossorigin="anonymous"></script>
     <script type="module" ASYNC src="https://unpkg.com/survey-core/plugins/bootstrap-integration.min.js"
             crossorigin="anonymous"></script>
@@ -81,7 +82,8 @@
                                     <div class="d-flex col align-self-center start-50 align-bottom">
                                         <a class="btn btn-lg btn-danger btn-xxl text-white display-3 rounded-3 shadow"
                                            data-bs-toggle="modal" data-bs-target="#my-modal" data-bs-locale="de"
-                                           role="button" id="BtnDE" onclick="call_startSurvey('de');">Starte Umfrage</a>
+                                           role="button" id="BtnDE" onclick="window.call_startSurvey('de');">Starte
+                                            Umfrage</a>
                                     </div>
                                 </div>
                             </div>
@@ -107,7 +109,7 @@
                                     <div class="d-flex col align-self-center start-50 align-bottom">
                                         <a class="btn btn-danger btn-lg btn-xxl shadow text-white display-3 rounded-3"
                                            data-bs-toggle="modal" data-bs-target="#my-modal" data-bs-locale="en"
-                                           role="button" id="BtnEN" onclick="call_startSurvey('en');">Start the
+                                           role="button" id="BtnEN" onclick="window.call_startSurvey('en');">Start the
                                             survey</a>
                                     </div>
                                 </div>
