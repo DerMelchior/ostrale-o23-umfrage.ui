@@ -6,7 +6,7 @@ import '/js/survey.core.min.js';
 import '/js/survey.i18n.min.js';
 import '/js/survey.jquery.min.js';
 /*import surveyLocalisation from '/js/survey.i18n.min.js';*/
-import surveyCss from '/js/bootstrap-integration.min.js';
+import '/js/bootstrap-integration.min.js';
 
 window.ostrale_survey_locale = "de";
 var o23survey = new Survey.Model(json);
@@ -44,7 +44,8 @@ document.addEventListener("DOMContentLoaded", function () {
         window.o23survey.locale = window.ostrale_survey_locale;
     });
 
-    SurveyModal.addEventListener("show.bs.modal", function (event) {
+    SurveyModal.addEventListener("modal.fade.show", function (event) {
+        console.log('event getriggert');
         // Get the button that triggered the modal
         var button = event.relatedTarget;
         // Extract value from the custom data-* attribute
