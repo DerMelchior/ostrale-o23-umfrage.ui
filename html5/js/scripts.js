@@ -1,6 +1,6 @@
 /* private scripts */
 /* import './ostrale023-umfrage_json';*/
-import json from './ostrale023-umfrage_json';
+import {json} from './ostrale023-umfrage_json';
 import Survey from './survey.core.min.js';
 import surveyLocalisation from 'survey.i18n.min';
 import surveyCss from './bootstrap-integration.min';
