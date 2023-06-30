@@ -1,10 +1,6 @@
 /* private scripts */
 /* import './ostrale023-umfrage_json';*/
-import {json} from '/js/ostrale023-umfrage_json.js';
-import '/js/bootstrap.bundle.min.js';
-import '/js/survey.jquery.min.js';
-import '/js/survey.core.min.js';
-import '/js/survey.i18n.min.js';
+
 
 /*import surveyLocalisation from '/js/survey.i18n.min.js';*/
 /*import '/js/bootstrap-integration.min.js';*/
