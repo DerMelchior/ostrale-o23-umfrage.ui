@@ -1,7 +1,7 @@
 /* private scripts */
 /* import './ostrale023-umfrage_json';*/
 import {json} from '/js/ostrale023-umfrage_json.js';
-import {jquery} from '/js/jquery.min.js';
+import {jQuery} from '/js/jquery.min.js';
 import {survey} from '/js/survey.core.min.js';
 /*import '/js/survey.jquery.min';*/
 import surveyLocalisation from '/js/survey.i18n.min.js';
@@ -12,7 +12,7 @@ var o23survey = new Survey.Model(json);
 var css = new surveyCss();
 var o23locale = surveyLocalisation.locales();
 
-export function call_startSurvey(locale) {
+function call_startSurvey(locale) {
     window.ostrale_survey_locale = locale;
     $("#surveyElement").survey({model: o23survey, locale: locale});
     console.log('document.locale: ' + window.ostrale_survey_locale);
@@ -25,6 +25,12 @@ document.addEventListener("DOMContentLoaded", function () {
     var btnEN = document.getElementById("BtnEN");
     var SurveyModal = document.getElementById("my-modal");
 
+    function call_startSurvey(locale) {
+        window.ostrale_survey_locale = locale;
+        $("#surveyElement").survey({model: o23survey, locale: locale});
+        console.log('document.locale: ' + window.ostrale_survey_locale);
+        console.log('survey.locale: ' + window.o23survey.locale);
+    };
     console.log('DOMContentLoaded! ')
     window.o23survey.supportedLocales = ["en", "de"];
     window.o23survey.defaultLocale = "en";
@@ -44,6 +50,7 @@ document.addEventListener("DOMContentLoaded", function () {
         document.ostrale_survey_locale = button.getAttribute("data-bs-locale");
         console.log('data-bs-locale: ' + button.getAttribute("data-bs-locale"));
         // Change survey language
+        call_startSurvey(button.getAttribute("data-bs-locale"));
         //myModal.querySelector(".modal-title").innerText = titleData;
         document.o23survey.locale = document.ostrale_survey_locale;
         console.log('ostrale_survey_locale: ' + document.ostrale_survey_locale);
