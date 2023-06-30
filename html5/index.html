@@ -20,7 +20,7 @@
     <!-- JQuery JS
     <script ASYNC src="https://unpkg.com/jquery@3.6.4/dist/jquery.min.js" crossorigin="anonymous"></script>
     -->
-    <script ASYNC crossorigin = "anonymous" src = "./js/jquery.min.js" type = "module" ></script >
+    <script ASYNC crossorigin = "anonymous" src = "./js/jquery.min.js" type = "javascript" ></script >
     <!--
     <script src = "https://unpkg.com/survey-jquery@1.9.92/survey.jquery.min.js" type = "module" ></script >-->
     <!-- SurveyJS Theme CSS -->
@@ -41,7 +41,7 @@
     <!--
     <script src="./js/ostrale023-umfrage_json.js" crossorigin="anonymous"></script>
     <script async src="./js/ostrale23-umfrage.js" crossorigin="anonymous"></script>-->
-    <script crossorigin = "anonymous" src = "./js/scripts.js" type = "text/javascript" ></script >
+    <script crossorigin = "anonymous" src = "./js/scripts.js" type = "module" ></script >
     <title>Umfrage zur Ostrale Biennale O23</title>
 </head>
 <body id="page">
@@ -133,7 +133,7 @@
         window.ostrale_survey_locale = 'en';
 
 
-        $("#surveyElement").Survey({model: o23survey, locale: 'en'});
+        $("#surveyElement").Survey({model: window.o23survey, locale: 'en'});
         o23survey.locale = 'en';
         console.log('document.locale: ' + window.ostrale_survey_locale);
         console.log('survey.locale: ' + o23survey.locale);
