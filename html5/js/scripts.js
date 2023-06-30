@@ -5,6 +5,13 @@ import Survey from './survey.core.min.js';
 
 window.ostrale_survey_locale = "de";
 window.survey = new Survey.Model(json);
+
+export function call_startSurvey(locale) {
+    window.ostrale_survey_locale = locale;
+    $("#surveyElement").survey({model: survey, locale: locale});
+    console.log('document.locale: ' + window.ostrale_survey_locale);
+    console.log('survey.locale: ' + window.survey.locale);
+};
 /* scripts called after dom content loaded */
 document.addEventListener("DOMContentLoaded", function () {
 
@@ -41,13 +48,7 @@ document.addEventListener("DOMContentLoaded", function () {
         btnDE.addEventListener("click", function() {SurveyModal.show(); });
         btnEN.addEventListener("click", function() {SurveyModal.show(); });
     */
-    window.call_startSurvey = function call_startSurvey(locale) {
-        document.ostrale_survey_locale = locale;
-        $("#surveyElement").survey({model: survey, locale: locale});
-        console.log('document.locale: ' + window.ostrale_survey_locale);
-        console.log('survey.locale: ' + window.survey.locale);
 
-    }
 
 
 });
