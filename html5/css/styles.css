@@ -45,6 +45,14 @@ html, body {
 
 /* surveyJS related stuff */
 
+#btn_prev,
+#btn_close,
+#btn_send {
+   font-size: 2.5rem;
+}
+#btn_prev, #btn_send {
+    disabled:disabled;
+}
 #surveyElement > div > form > div.sd-container-modern > div.sd-title.sd-container-modern__title {
     display: none;
 }
@@ -94,8 +102,8 @@ div.sd-imagepicker__item.sd-imagepicker__item--allowhover {
    display:none;
 }
 
-#surveyElementDE > div.sd-root-modern > form > div.sd-conainer-modern > div.sv-components-row .sv-components-column.sv-components-column--expandable.sd-body.sd-body--responsive > div.sv-components-column > div.sd-action-bar.sd-footer.sd-body__navigation.sd-clearfix,
-#surveyElementEN > div.sd-root-modern > form > div.sd-conainer-modern > div.sv-components-row .sv-components-column.sv-components-column--expandable.sd-body.sd-body--responsive > div.sv-components-column > div.sd-action-bar.sd-footer.sd-body__navigation.sd-clearfix {
+.sd-conainer-modern div.sv-components-row .sv-components-column.sv-components-column--expandable.sd-body.sd-body--responsive .sv-components-column > div.sd-action-bar.sd-footer.sd-body__navigation.sd-clearfix,
+.sd-conainer-modern div.sv-components-row .sv-components-column.sv-components-column--expandable.sd-body.sd-body--responsive .sv-components-column div.sd-action-bar.sd-footer.sd-body__navigation.sd-clearfix {
    display:none;
 }
 #surveyElementDE .sd-body.sd-body--responsive .sd-body__timer,
