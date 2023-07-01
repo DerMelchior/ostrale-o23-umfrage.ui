@@ -77,14 +77,19 @@ div.sd-imagepicker__item.sd-imagepicker__item--allowhover {
   /*  border: 1px solid #dc3545 !important;*/
 }
 
-div.sd-imagepicker__image-container {
+.sd-question__content > fieldset.sd-selectbase.sd-imagepicker .sd-selectbase__column > div.sd-imagepicker__item.sd-imagepicker__item--allowhover > label.sd-imagepicker__label > div.sd-imagepicker__item-decorator > div.sd-imagepicker__image-container img.sd-imagepicker__image {
+   /*.sd-selectbase__column.sv-q-column-4 => img.sd-imagepicker__image */
     background-color: lightgrey;
     border: 1px solid #dc3545;
-  border-radius: 5px;
+    border-radius: 5px;
 }
 
-#sp_104.sv-components-column {
-   display: none;
+#surveyElementDE > div.sd-root-modern > form > div.sd-container-modern__title {
+   display:none;
+}
+
+#surveyElementEN > div.sd-root-modern > form > div.sd-container-modern__title {
+   display:none;
 }
 
 #sd-nav-next {
