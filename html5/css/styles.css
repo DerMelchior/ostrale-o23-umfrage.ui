@@ -48,12 +48,14 @@ html, body {
 #btn_prev, #btn_prev_en,
 #btn_close, #btn_close_en,
 #btn_send, #btn_send_en {
+    border-color: darkred;
+    color: darkred;
     font-size: 2.5rem;
 }
 
 #btn_prev, #btn_send,
 #btn_prev_en, #btn_send_en {
-    disabled: disabled;
+    /*state: disabled*/
 }
 
 #surveyElement > div > form > div.sd-container-modern > div.sd-title.sd-container-modern__title {

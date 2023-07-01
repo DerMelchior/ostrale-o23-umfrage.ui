@@ -178,14 +178,16 @@
         <div class="modal-content">
             <div class = "modal-header" >
                 <h5 class = "modal-title d-none" id = "my-modal-title" >Umfrage zur Biennale O23</h5 >
-                <button class = "btn btn-lg btn_prev" data-bs-target = "#my-modal" id = "btn_prev"
-                        data-bs-previous = "true" aria-label = "Zur&uml;ck / Back" >
-                    <span aria-hidden = "true" ><i class = "bi bi-arrow-left-square" ></i ></span >
-                </button >
-                <button aria-label = "Absenden" class = "btn btn-lg btn_prev" data-bs-send = "true"
-                        data-bs-target = "#my-modal" id = "btn_send" >
-                    <span aria-hidden = "true" ><i class = "bi bi-arrow-right-square" ></i ></span >
-                </button >
+                <div aria-label = "navigation buttons" class = "btn-group" role = "group" >
+                    <button aria-label = "Zur&uml;ck / Back" class = "btn btn-lg btn_prev" data-bs-previous = "true"
+                            data-bs-target = "#my-modal" id = "btn_prev" >
+                        <span aria-hidden = "true" ><i class = "bi bi-arrow-left-square" ></i ></span >
+                    </button >
+                    <button aria-label = "Absenden" class = "btn btn-lg btn_prev" data-bs-send = "true"
+                            data-bs-target = "#my-modal" id = "btn_send" >
+                        <span aria-hidden = "true" ><i class = "bi bi-check2-square" ></i ></span >
+                    </button >
+                </div >
                 <button class = "btn btn-lg close" data-bs-dismiss = "modal" data-bs-target = "#my-modal" data-bs-toggle = "modal"
                         id = "btn_close"
                         aria-label = "Close" >
@@ -210,13 +212,15 @@
         <div class = "modal-content" >
             <div class = "modal-header" >
                 <h5 class = "modal-title d-none" id = "my-modal-en-title" >Survey in part of biennal O23</h5 >
-                <button aria-label = "Zur&uml;ck / Back" class = "btn btn-lg btn_prev" data-bs-previous = "true"
-                        data-bs-target = "#my-modal" id = "btn_prev_en" >
-                    <span aria-hidden = "true" ><i class = "bi bi-arrow-left-square" ></i ></span >
-                </button >
-                <button aria-label = "Absenden" class = "btn btn-lg btn_prev" data-bs-send = "true" data-bs-target = "#my-modal" id = "btn_send_en" >
-                    <span aria-hidden = "true" ><i class = "bi bi-arrow-right-square" ></i ></span >
-                </button >
+                <div aria-label = "navigation buttons" class = "btn-group" role = "group" >
+                    <button aria-label = "Zur&uml;ck / Back" class = "btn btn-lg btn_prev" data-bs-previous = "true"
+                            data-bs-target = "#my-modal" id = "btn_prev_en" >
+                        <span aria-hidden = "true" ><i class = "bi bi-arrow-left-square" ></i ></span >
+                    </button >
+                    <button aria-label = "Absenden" class = "btn btn-lg btn_prev" data-bs-send = "true" data-bs-target = "#my-modal" id = "btn_send_en" >
+                        <span aria-hidden = "true" ><i class = "bi bi-check2-square" ></i ></span >
+                    </button >
+                </div >
                 <button aria-label = "Close" class = "btn btn-lg close" data-bs-dismiss = "modal" data-bs-target = "#my-modal"
                         data-bs-toggle = "modal"
                         id = "btn_close_en" >
