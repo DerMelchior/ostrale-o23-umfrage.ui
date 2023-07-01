@@ -83,9 +83,21 @@ div.sd-imagepicker__image-container {
   border-radius: 5px;
 }
 
+.sv-components-column {
+   display: none;
+}
 
+#sd-nav-next {
 
+}
 
+#sd-nav-prev {
+
+}
+#sd-nav-complete {
+	background-color:#dc3545;
+	border: 2px solid #dc3545;
+}
 /* ---------------------------- background-color: --------------------------- */
 /*
 .sd-imagepicker__image-container {
