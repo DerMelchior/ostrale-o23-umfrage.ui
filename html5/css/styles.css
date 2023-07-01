@@ -94,8 +94,12 @@ div.sd-imagepicker__item.sd-imagepicker__item--allowhover {
    display:none;
 }
 
-#surveyElementDE > div.sd-root-modern > form > div.sd-conainer-modern > div.sv-components-row > div.sv-components-column.sv-components-column--expandable.sd-body.sd-body--responsive > div.sv-components-column > div.sd-action-bar.sd-footer.sd-body__navigation.sd-clearfix,
-#surveyElementEN > div.sd-root-modern > form > div.sd-conainer-modern > div.sv-components-row > div.sv-components-column.sv-components-column--expandable.sd-body.sd-body--responsive > div.sv-components-column > div.sd-action-bar.sd-footer.sd-body__navigation.sd-clearfix {
+#surveyElementDE > div.sd-root-modern > form > div.sd-conainer-modern > div.sv-components-row .sv-components-column.sv-components-column--expandable.sd-body.sd-body--responsive > div.sv-components-column > div.sd-action-bar.sd-footer.sd-body__navigation.sd-clearfix,
+#surveyElementEN > div.sd-root-modern > form > div.sd-conainer-modern > div.sv-components-row .sv-components-column.sv-components-column--expandable.sd-body.sd-body--responsive > div.sv-components-column > div.sd-action-bar.sd-footer.sd-body__navigation.sd-clearfix {
+   display:none;
+}
+#surveyElementDE > div.sd-root-modern > form > div.sd-conainer-modern div.sv-components-row .sv-components-column.sv-components-column--expandable.sd-body.sd-body--responsive > div.sv-components-column,
+#surveyElementEN > div.sd-root-modern > form > div.sd-conainer-modern div.sv-components-row .sv-components-column.sv-components-column--expandable.sd-body.sd-body--responsive > div.sv-components-column {
    display:none;
 }
 
