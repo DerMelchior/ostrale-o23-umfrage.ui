@@ -176,17 +176,22 @@
 <div id="my-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="my-modal-title" aria-hidden="true">
     <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
         <div class="modal-content">
-            <div class="modal-header">
+            <div class = "modal-header" >
                 <h5 class = "modal-title d-none" id = "my-modal-title" >Umfrage zur Biennale O23</h5 >
-                <button class = "btn carousel-control-prev-icon" data-bs-target = "#my-modal" disabled
+                <button class = "btn btn-lg btn_prev" data-bs-target = "#my-modal" id = "btn_prev"
                         data-bs-previous = "true" aria-label = "Zur&uml;ck / Back" >
                     <span aria-hidden = "true" ><i class = "bi bi-arrow-left-square" ></i ></span >
                 </button >
-                <button class="btn close" data-bs-target="#my-modal" data-bs-toggle="modal" data-bs-dismiss="modal"
-                        aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
+                <button aria-label = "Absenden" class = "btn btn-lg btn_prev" data-bs-send = "true"
+                        data-bs-target = "#my-modal" id = "btn_send" >
+                    <span aria-hidden = "true" ><i class = "bi bi-arrow-right-square" ></i ></span >
+                </button >
+                <button class = "btn btn-lg close" data-bs-dismiss = "modal" data-bs-target = "#my-modal" data-bs-toggle = "modal"
+                        id = "btn_close"
+                        aria-label = "Close" >
+                    <span aria-hidden = "true" >&times;</span >
+                </button >
+            </div >
             <div class = "modal-body" >
                 <div id = "surveyElement" style = "/*display: inline-flex;*/" >
                     <survey params = "survey: model" ></survey >
@@ -205,13 +210,16 @@
         <div class = "modal-content" >
             <div class = "modal-header" >
                 <h5 class = "modal-title d-none" id = "my-modal-en-title" >Survey in part of biennal O23</h5 >
-                <button aria-label = "Zur&uml;ck / Back" class = "btn carousel-control-prev-icon" data-bs-previous = "true"
-                        data-bs-target = "#my-modal-en" disabled >
+                <button aria-label = "Zur&uml;ck / Back" class = "btn btn-lg btn_prev" data-bs-previous = "true"
+                        data-bs-target = "#my-modal" id = "btn_prev_en" >
                     <span aria-hidden = "true" ><i class = "bi bi-arrow-left-square" ></i ></span >
                 </button >
-                <button aria-label = "Close" class = "btn close" data-bs-dismiss = "modal" data-bs-target =
-                        "#my-modal-en"
-                        data-bs-toggle = "modal" >
+                <button aria-label = "Absenden" class = "btn btn-lg btn_prev" data-bs-send = "true" data-bs-target = "#my-modal" id = "btn_send_en" >
+                    <span aria-hidden = "true" ><i class = "bi bi-arrow-right-square" ></i ></span >
+                </button >
+                <button aria-label = "Close" class = "btn btn-lg close" data-bs-dismiss = "modal" data-bs-target = "#my-modal"
+                        data-bs-toggle = "modal"
+                        id = "btn_close_en" >
                     <span aria-hidden = "true" >&times;</span >
                 </button >
             </div >
