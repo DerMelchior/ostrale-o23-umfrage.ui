@@ -191,10 +191,10 @@
                 <h5 class = "modal-title d-none" id = "my-modal-title" >Umfrage zur Biennale O23</h5 >
                 <div aria-label = "navigation buttons" class = "btn-group" role = "group" >
                     <button aria-label = "Zur&uml;ck / Back" class = "btn btn-lg btn_prev" data-bs-previous = "true"
-                            data-bs-target = "#my-modal" id = "btn_prev" >
+                            data-bs-target = "#my-modal" id = "btn_prev" onclick = "history.back();" >
                         <span aria-hidden = "true" ><i class = "bi bi-arrow-left-square" ></i ></span >
                     </button >
-                    <button aria-label = "Absenden" class = "btn btn-lg btn_prev" data-bs-send = "true"
+                    <button aria-label = "Absenden" class = "btn btn-lg btn_prev" data-bs-send = "true" disabled = "disabled"
                             data-bs-target = "#my-modal" id = "btn_send" >
                         <span aria-hidden = "true" ><i class = "bi bi-check2-square" ></i ></span >
                     </button >
@@ -225,10 +225,11 @@
                 <h5 class = "modal-title d-none" id = "my-modal-en-title" >Survey in part of biennal O23</h5 >
                 <div aria-label = "navigation buttons" class = "btn-group" role = "group" >
                     <button aria-label = "Zur&uml;ck / Back" class = "btn btn-lg btn_prev" data-bs-previous = "true"
-                            data-bs-target = "#my-modal" id = "btn_prev_en" >
+                            data-bs-target = "#my-modal" id = "btn_prev_en" onclick = "history.back();" >
                         <span aria-hidden = "true" ><i class = "bi bi-arrow-left-square" ></i ></span >
                     </button >
-                    <button aria-label = "Absenden" class = "btn btn-lg btn_prev" data-bs-send = "true" data-bs-target = "#my-modal" id = "btn_send_en" >
+                    <button aria-label = "Absenden" class = "btn btn-lg btn_prev" data-bs-send = "true"
+                            data-bs-target = "#my-modal" disabled = "disabled" id = "btn_send_en" >
                         <span aria-hidden = "true" ><i class = "bi bi-check2-square" ></i ></span >
                     </button >
                 </div >

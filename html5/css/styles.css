@@ -48,7 +48,8 @@ html, body {
 #btn_prev, #btn_prev_en,
 #btn_close, #btn_close_en,
 #btn_send, #btn_send_en {
-    border-color: darkred;
+    border: none;
+    color: darkred;
     font-size: 2.5rem;
 }
 
