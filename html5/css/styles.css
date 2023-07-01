@@ -74,11 +74,13 @@ div.sd-imagepicker__image {
 }
 
 div.sd-imagepicker__item.sd-imagepicker__item--allowhover {
-    border: 1px solid #dc3545 !important;
+  /*  border: 1px solid #dc3545 !important;*/
 }
 
 div.sd-imagepicker__image-container {
     background-color: lightgrey;
+    border: 1px solid #dc3545;
+  border-radius: 5px;
 }
 
 
@@ -87,8 +89,7 @@ div.sd-imagepicker__image-container {
 /* ---------------------------- background-color: --------------------------- */
 /*
 .sd-imagepicker__image-container {
-  border: 1px solid #dc3545;
-  border-radius: 5px;
+  
 }
 */
 .sd-element--with-frame > .sd-element > .sd-question > .sd-row__question {
