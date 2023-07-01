@@ -98,6 +98,10 @@ div.sd-imagepicker__item.sd-imagepicker__item--allowhover {
 #surveyElementEN > div.sd-root-modern > form > div.sd-conainer-modern > div.sv-components-row .sv-components-column.sv-components-column--expandable.sd-body.sd-body--responsive > div.sv-components-column > div.sd-action-bar.sd-footer.sd-body__navigation.sd-clearfix {
    display:none;
 }
+#surveyElementDE .sd-body.sd-body--responsive .sd-body__timer,
+#surveyElementDE .sd-body.sd-body--responsive .sd-body__navigation,
+#surveyElementEN .sd-body.sd-body--responsive .sd-body__timer,
+#surveyElementEN .sd-body.sd-body--responsive .sd-body__navigation, 
 #surveyElementDE > div.sd-root-modern > form > div.sd-conainer-modern div.sv-components-row .sv-components-column.sv-components-column--expandable.sd-body.sd-body--responsive > div.sv-components-column,
 #surveyElementEN > div.sd-root-modern > form > div.sd-conainer-modern div.sv-components-row .sv-components-column.sv-components-column--expandable.sd-body.sd-body--responsive > div.sv-components-column {
    display:none;
