@@ -88,7 +88,11 @@ div.sd-imagepicker__item.sd-imagepicker__item--allowhover {
    display:none;
 }
 
-#surveyElementEN > div.sd-root-modern > form > div.sd-container-modern__title {
+#surveyElementEN > div.sd-root-modern > form > div.sd-container-modern > div.sd-title.sd-container-modern__title {
+   display:none;
+}
+
+#surveyElementDE > div.sd-root-modern > form > div.sd-container-modern > div.sd-title.sd-container-modern__title {
    display:none;
 }
 
