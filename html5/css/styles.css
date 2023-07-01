@@ -88,11 +88,14 @@ div.sd-imagepicker__item.sd-imagepicker__item--allowhover {
    display:none;
 }
 
-#surveyElementEN > div.sd-root-modern > form > div.sd-container-modern > div.sd-title.sd-container-modern__title {
+ 
+#surveyElementEN > div.sd-root-modern > form > div.sd-container-modern > div.sd-title.sd-container-modern__title,
+#surveyElementDE > div.sd-root-modern > form > div.sd-container-modern > div.sd-title.sd-container-modern__title {
    display:none;
 }
 
-#surveyElementDE > div.sd-root-modern > form > div.sd-container-modern > div.sd-title.sd-container-modern__title {
+#surveyElementDE > div.sd-root-modern > form > div.sd-conainer-modern > div.sv-components-row > div.sv-components-column.sv-components-column--expandable.sd-body.sd-body--responsive > div.sv-components-column > div.sd-action-bar.sd-footer.sd-body__navigation.sd-clearfix,
+#surveyElementEN > div.sd-root-modern > form > div.sd-conainer-modern > div.sv-components-row > div.sv-components-column.sv-components-column--expandable.sd-body.sd-body--responsive > div.sv-components-column > div.sd-action-bar.sd-footer.sd-body__navigation.sd-clearfix {
    display:none;
 }
 
